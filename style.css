@@ -1,0 +1,171 @@
+html, body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Veranda, sans-serif;
+	font-size: 16px;
+	background: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#content
+{
+	padding: 5px;
+	margin-top: 36px;
+}
+
+.date
+{
+	text-align: center;
+	background-color: #dddddd;
+}
+
+.mark
+{
+	background-color: #85ff93;
+}
+
+table, tr, td, th
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th
+{
+	padding: 5px;
+	font-weight: bold;
+	width: 200px;
+}
+
+td
+{
+	width: 200px;
+	padding: 5px;
+}
+
+.cell
+{
+	position: relative;
+	vertical-align: top;
+	height: 60px;
+}
+
+ul
+{
+	margin: 0;
+	padding: 0 0 0 20px;
+	display: block;
+}
+
+.x
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	display: block;
+}
+
+.x:before, .x:after
+{
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 33px;
+	width: 2px;
+	background-color: #ff0000;
+}
+
+.x:before
+{
+	transform: rotate(45deg);
+}
+
+.x:after
+{
+	transform: rotate(-45deg);
+}
+
+.nav
+{
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	height: 36px;
+}
+
+.title
+{
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	color: white;
+	font-size: 24px;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+}
+
+a:link, a:visited, a:active
+{
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.navlink:link, .navlink:visited, .navlink:active
+{
+	height: 36px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.navlink:hover
+{
+	text-decoration: underline;
+}
+
+#overlay
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: white;
+	display: none;
+}
+
+#desc
+{
+	margin: 36px 0px 0px 0px;
+	padding: 5px;
+}
+
+.hidden
+{
+	display: none;
+}
+
